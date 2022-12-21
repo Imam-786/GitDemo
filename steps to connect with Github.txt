@@ -1,7 +1,13 @@
 Steps: - If repository or folder is already of .git type (created)
 1. Create New repository on Github using create repository.
 2. open Git bash in the folder. Initially when you type git remote command nothing will show you.
-3. add a command 'git remote add origin https://github.com/Imam-786/GitDemo.git' --> This command says add a remote for having name 'origin'(you can change the name orgin) of website url (https://github.com/Imam-786/GitDemo.git). After this command when you type 'git remote' command it will show you there is a remote of name 'origin' 
+3. add a command 'git remote add origin https://github.com/Imam-786/GitDemo.git' --> This command says add a remote for having name 'origin'(you can change the name orgin) of website url (https://github.com/Imam-786/GitDemo.git). After this command when you type 'git remote' command it will show you there is a remote of name 'origin'.
+4. type 'git push -u origin master' command which will give you an error like permission to url is denied.
+5.add ssh key:-> steps to add ssh keys 
+  a. run '$ ssh-keygen -t ed25519 -C "your_email@example.com"' this by changing email and enter around 3 times.
+  b. run '$ eval "$(ssh-agent -s)"' this command and you will get 'Agent pid 59566(59556 may vary)'.
+  c. run '$ ssh-add ~/.ssh/id_ed25519' this command.
+  d. run '$ tail < ~/.ssh/id_ed25519.pub' this command ant it will display the SSH key and copy that ssh key and         paste on your github account.
 
 
 Notes: -
