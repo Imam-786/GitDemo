@@ -1,0 +1,42 @@
+3-stages of .git
+Working 
+Staging 
+.git repository
+
+Commands
+git status
+git init  -->It will create .git repository for these files
+git add --a  -->it will add all files into staging area
+git commit -m "Message"  -->it will commit on these files.
+git log --> It will show us all the logs
+git add first.txt --> It will add first.txt file into staging area.
+rm -rf .git -->it is very danger command which deletes your .git repository.
+pwd --> it shows the path of present working directory.
+ls -->list content of current folder.
+cd folder -->Change the directory and enter into the folder (folder-->you can select whichever folder you want)
+git clone url -->It adds the data of the url into your local directory so that you can easily work on local file.
+touch error.log --> It adds new file in the repository (here error.log is the file name)
+touch .gitignore --> It creates .gitignore file in your repository which is used to store all the non-working files.
+git diff --> It compares the staging area file and the same working directory file 
+git diff --staged --> It compares the current staging area with previous commit.
+git commit -a -m "Message" -->It will skip the staging area.But It won't skip the new created file
+git rm third.txt --> third.txt file is romoved and staged rest things.
+git mv first.txt first_renamed.txt --> It will move first.txt to first_renamed.txt. If first_renamed.txt is not available then firxt.txt will be renamed as first_renamed.txt
+git rm --cached db.accdb --> It will untrack the file db.accdb
+git log -p --> will show the commited logs alon with the changes made by different users.
+git log --stat --> will show you the summary of logs
+git log --pretty=oneline --> will gives you all the commits in one line.
+git log --pretty=short --> will gives you all the commits in short.
+git log --since=2.days --> give you the logs of two days. and like that we can use 2.months,2.years etc.
+git log --pretty=format:"%h --%an" --> gives you in formatted author.
+git commit --amend --> is used to edit the existing commit use 'i' for editing and ':wq' for escaping and saving.
+git log -p -1 -->
+git restore --staged first_renamed.txt --> used to unstage the file
+git checkout -- first.txt --> It will just restore the file till last commit.
+git checkout -f --> Your working directory will be restored(matched) with the last(previous)commit.
+git config --global alias.ci commit --> is used to create the shortcuts for commands. Here "ci" shortcut is created for commit command.So you can use "git ci" instead of "git commit".
+
+Notes: -
+1. You can add all the path directories in the .gitignore file if you wanted to skip the path.
+2. Git bydefault ignores the empty folder.
+Error: If you get an error() while cloning the url use (git config --global http.sslbackend schannel) and then try it.  
