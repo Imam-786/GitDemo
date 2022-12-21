@@ -1,0 +1,11 @@
+Steps: - If repository or folder is already of .git type (created)
+1. Create New repository on Github using create repository.
+2. open Git bash in the folder. Initially when you type git remote command nothing will show you.
+3. add a command 'git remote add origin https://github.com/Imam-786/GitDemo.git' --> This command says add a remote for having name 'origin'(you can change the name orgin) of website url (https://github.com/Imam-786/GitDemo.git). After this command when you type 'git remote' command it will show you there is a remote of name 'origin' 
+
+
+Notes: -
+1. push means pushing the code on github from your computer.
+2. pull means pulling the code from github server to your computer.
+3 git remote -v --> it will gives us two url's for push and fetch(pull)
+ 
