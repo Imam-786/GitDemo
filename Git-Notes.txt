@@ -35,6 +35,9 @@ git restore --staged first_renamed.txt --> used to unstage the file
 git checkout -- first.txt --> It will just restore the file till last commit.
 git checkout -f --> Your working directory will be restored(matched) with the last(previous)commit.
 git config --global alias.ci commit --> is used to create the shortcuts for commands. Here "ci" shortcut is created for commit command.So you can use "git ci" instead of "git commit".
+git checkout -b develop --> will create a branch of name 'develop' and will enter in develop branch.
+git checkout master -->will switch the branch (from current branch to master branch).
+git branch --> will display all the branches created in that repository.
 
 Notes: -
 1. You can add all the path directories in the .gitignore file if you wanted to skip the path.
